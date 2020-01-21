@@ -1,0 +1,55 @@
+@import 'assets/index';
+
+$width-container:1170px;
+
+/*шрифт*/
+$font-stack:"open sans";
+
+
+$font-text-one:Helvetica;
+$font-text-two:roboto;
+$text-transform:uppercase;
+
+
+*{
+    font-family: $font-stack;
+}
+body{
+    margin: auto;
+}
+.container{
+    width: $width-container;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+ul.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    
+    li {
+        list-style: none;
+        padding: 13px 25px;
+        
+        a{
+            font-family: 'Open Sans';
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+}
+
