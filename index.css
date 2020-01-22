@@ -258,7 +258,7 @@ hr {
 }
 
 .banner--info--button {
-  padding: 15px 20px;
+  padding: 15px 72px;
   color: #fff;
   background: #fd4f10;
   border-color: #fd4f10;
@@ -266,5 +266,67 @@ hr {
   font-size: 16px;
   margin-left: 7px;
   letter-spacing: 0.2px;
+}
+
+.footer {
+  background: #1a2d34;
+}
+
+.footer .container {
+  padding-top: 67px;
+}
+
+.footer .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__item:nth-child(1) {
+  padding: 0 15px 0 0;
+}
+
+.footer__item:nth-child(2) {
+  padding: 2px 0 0 12px;
+}
+
+.footer__item:nth-child(3), .footer__item:nth-child(4), .footer__item:nth-child(5) {
+  padding: 2px 0 0 0;
+}
+
+.footer__item--menu {
+  padding: 0;
+}
+
+.footer__item--menu-item {
+  list-style: none;
+}
+
+.footer__item--refer {
+  font-size: 12px;
+  color: #67919f;
+}
+
+.footer__item--title {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer__item--column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__item--copyright {
+  color: #67919f;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.footer__item--bottom-refer {
+  font-size: 12px;
+  color: #67919f;
 }
 /*# sourceMappingURL=index.css.map */
