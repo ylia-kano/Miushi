@@ -5,41 +5,52 @@
         <meta charset="utf-8">
         <title>test</title>
         <link rel="shortcut icon" href="ссылка на иконку" type="image/png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="index.css">    
     </head>
     <body>
         <header class="header">
-            <div class="container header__container">
-                <div class="header__logo">
-                    <img src="assets/img/logo.png">
-                </div>
-                <div class="header__info">
-                    <div class="header__info--info">
-                        <p class="header__info--number">+7 (800) 333 2 222</p>
-                        <p class="header__info--work-time">Работаем с 11.00 до 23.00</p>
+            <div class="container">
+                <div class="row header-row">
+                    <div class="col-8 header__logo">
+                        <img src="assets/img/logo.png">
                     </div>
-                    <div class="header__info--click">Обратный звонок</div>
+                    <div class="col-4 header__info">
+                        <div class="header__info--info">
+                            <p class="header__info--number">+7 (800) 333 2 222</p>
+                            <p class="header__info--work-time">Работаем с 11.00 до 23.00</p>
+                        </div>
+                        <div class="button header__info--click">Обратный звонок</div>
+                    </div>
                 </div>
             </div>
             <hr>
-            <div class="container header__container">
-                <nav>
-                    <ul class="nav-menu">
-                        <li><a>Меню</a></li>
-                        <li><a>Акции и скидки</a></li>
-                        <li><a>Доставка и оплата</a></li>
-                        <li><a>Новости</a></li>
-                        <li><a>Контакты</a></li>
-                        <li><a><i class="fas fa-user-friends"></i>Кабинет</a></li>
-                        <li><a><i class="fas fa-shopping-cart"></i>Корзина</a></li>
+            <div class="container">
+                <div class="row">
+                <nav class="nav">
+                    <ul class="nav__menu">
+                        <li class="nav__menu--item"><a class="nav__menu--refer">Меню</a></li>
+                        <li class="nav__menu--item"><a class="nav__menu--refer">Акции и скидки</a></li>
+                        <li class="nav__menu--item"><a class="nav__menu--refer">Доставка и оплата</a></li>
+                        <li class="nav__menu--item"><a class="nav__menu--refer">Новости</a></li>
+                        <li class="nav__menu--item"><a class="nav__menu--refer">Контакты</a></li>
+                        <li class="nav__menu--item"><a class="nav__menu--refer"><i class="fas fa-user-friends"></i>Кабинет</a></li>
+                        <li class="nav__menu--item"><a class="nav__menu--refer"><i class="fas fa-shopping-cart"></i>Корзина</a></li>
 
                     </ul>
                 </nav>
             </div>
+
         </header>
         <main>
             <section class="banner">
                 <div class="container">
+                    <div class="banner--info">
+                        <div class="banner--info--title">Счастливые часы</div>
+                        <p class="banner--info--time">с 11:00 до 16:00 в будние дни</p>
+                        <div class="button banner--info--button">Подробнее</div>
+                    </div>
+
                 </div>
             </section>
             <section class=""> 

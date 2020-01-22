@@ -6,13 +6,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 100;
-  src: local("Roboto Thin"), local("Roboto-Thin"), url("assets/fonts/roboto-v20-latin-100.woff") format("woff"), url("assets/fonts/roboto-v20-latin-100.ttf") format("truetype");
-}
-
 /* open-sans-300 - latin */
 @font-face {
   font-family: 'Open Sans';
@@ -88,6 +81,7 @@
 }
 
 /*шрифт*/
+/*Цвет*/
 * {
   font-family: "open sans";
 }
@@ -103,50 +97,174 @@ body {
   padding-right: 15px;
 }
 
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+hr {
+  margin: 10px 0 0;
+}
+
+.button {
+  border: solid 1px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.header .container {
+  padding: 0;
+}
+
+.header__logo {
+  padding: 9px 19px;
 }
 
 .header__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0 0 32px;
+  margin-top: -3px;
+}
+
+.header__info--number {
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  margin: 0;
+}
+
+.header__info--work-time {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: -0.9px;
+  margin: 0;
+}
+
+.header__info--click {
+  margin-left: 29px;
+  padding: 7px 15px;
+  border-color: #84c604;
+  margin-top: 0px;
+  color: #84c604;
+}
+
+.header__info--click:hover {
+  background: #84c604;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav {
+  width: 100%;
+}
+
+.nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.nav__menu--item {
+  list-style: none;
+  padding: 13px 30px;
+}
+
+.nav__menu--item:hover {
+  background: #84c604;
+  color: #fff;
+  cursor: pointer;
+}
+
+.nav__menu--refer {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  word-spacing: 2.8px;
+}
+
+.nav__menu--refer i {
+  margin-right: 10px;
+  font-size: 19px;
+  vertical-align: middle;
+  color: #20b80b;
+}
+
+.banner {
+  background: url(assets/img/banner.jpg);
+}
+
+.banner .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.banner--info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  padding-top: 130px;
+  padding-left: 10px;
+  padding-bottom: 150px;
 }
 
-ul.nav-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0;
-  padding: 0;
+.banner--info--title {
+  font-family: 'Lemon Tuesday';
+  font-size: 106px;
+  color: #84c604;
+  width: 650px;
+  line-height: 0.95;
+  margin-bottom: 50px;
+  position: relative;
 }
 
-ul.nav-menu li {
-  list-style: none;
-  padding: 13px 25px;
-}
-
-ul.nav-menu li a {
-  font-family: 'Open Sans';
+.banner--info--title.banner--info--title:after {
+  content: 'cкидка 15%';
+  background: #d81f24;
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  font-family: open sans;
+  font-size: 29px;
   font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  line-height: 35px;
+  border-radius: 50%;
+  top: -17px;
+  right: -73px;
+  padding: 40px 0;
+}
+
+.banner--info--time {
+  font-style: italic;
+  font-size: 26px;
+  margin-left: 8px;
+  letter-spacing: -0.2px;
+  color: #fff;
+}
+
+.banner--info--button {
+  padding: 15px 20px;
+  color: #fff;
+  background: #fd4f10;
+  border-color: #fd4f10;
+  margin-top: 35px;
+  font-size: 16px;
+  margin-left: 7px;
+  letter-spacing: 0.2px;
 }
 /*# sourceMappingURL=index.css.map */

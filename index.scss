@@ -5,15 +5,16 @@ $width-container:1170px;
 /*шрифт*/
 $font-stack:"open sans";
 
-
-$font-text-one:Helvetica;
-$font-text-two:roboto;
-$text-transform:uppercase;
-
+/*Цвет*/
+$color1:#000;
+$color2:#fff;
+$color3:#84c604;
+$color4: #20b80b;
 
 *{
     font-family: $font-stack;
 }
+
 body{
     margin: auto;
 }
@@ -23,33 +24,154 @@ body{
     padding-left: 15px;
     padding-right: 15px;
 }
-.header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+hr {
+    margin: 10px 0 0;
 }
-
+.button{
+    border: solid 1px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.header .container {
+    padding: 0;
+}
+.header__logo {
+    padding: 9px 19px;
+}
 .header__info {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    align-items: center;
+    padding: 0 0 0 32px;
+    margin-top: -3px;
+
+    &--number {
+        font-weight: 700;
+        letter-spacing: 0.7px;
+        margin: 0;
+    }
+    &--work-time {
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: -0.9px;
+        margin: 0;
+    }
+    &--click {
+        margin-left: 29px;
+        padding: 7px 15px;
+        border-color: $color3;
+        margin-top: 0px;
+        color: $color3;
+
+        &:hover{
+             background: $color3;
+             color: $color2;
+             cursor: pointer;
+        }
+    }
+
 }
-ul.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    
-    li {
-        list-style: none;
-        padding: 13px 25px;
+
+.nav{
+    width: 100%;
+
+    &__menu {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 0;
+
+        &--item{
+            list-style: none;
+            padding: 13px 30px;
+            
+            &:hover {
+                background: $color3;
+                color: $color2;
+                cursor: pointer;
+            }
+        }
         
-        a{
+        &--refer {
             font-family: 'Open Sans';
             font-weight: 600;
             font-size: 14px;
             text-transform: uppercase;
+            word-spacing: 2.8px;
+
+            i{
+                margin-right: 10px;
+                font-size: 19px;
+                vertical-align: middle;
+                color: #20b80b;
+                
+            }
         }
     }
 }
 
+.banner{
+    background: url(assets/img/banner.jpg);
+
+    .container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &--info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-top: 130px;
+        padding-left: 10px;
+        padding-bottom: 150px;
+    
+        &--title{
+            font-family: 'Lemon Tuesday';
+            font-size: 106px;
+            color: $color3;
+            width: 650px;
+            line-height: 0.95;
+            margin-bottom: 50px;
+            position: relative;
+
+            &.banner--info--title:after {
+                content: 'cкидка 15%';
+                background: #d81f24;
+                position: absolute;
+                width: 140px;
+                height: 140px;
+                font-family: open sans;
+                font-size: 29px;
+                font-weight: 600;
+                text-align: center;
+                color: #fff;
+                line-height: 35px;
+                border-radius: 50%;
+                top: -17px;
+                right: -73px;
+                padding: 40px 0;
+            }
+        }
+
+        &--time{
+            font-style: italic;
+            font-size: 26px;
+            margin-left: 8px;
+            letter-spacing: -0.2px;
+            color: $color2;
+        }
+
+        &--button{
+            padding: 15px 20px;
+            color: $color2;
+            background: #fd4f10;
+            border-color: #fd4f10;
+            margin-top: 35px;
+            font-size: 16px;
+            margin-left: 7px;
+            letter-spacing: 0.2px;
+        }
+    }
+}
