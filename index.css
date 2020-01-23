@@ -82,7 +82,7 @@
 
 /*шрифт*/
 /*Цвет*/
-* {
+body {
   font-family: "open sans";
 }
 
@@ -154,10 +154,6 @@ hr {
   cursor: pointer;
 }
 
-.nav {
-  width: 100%;
-}
-
 .nav__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -169,7 +165,7 @@ hr {
 
 .nav__menu--item {
   list-style: none;
-  padding: 13px 30px;
+  padding: 13px 28px;
 }
 
 .nav__menu--item:hover {
@@ -186,7 +182,35 @@ hr {
   word-spacing: 2.8px;
 }
 
-.nav__menu--refer i {
+.person__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.person__menu--item {
+  list-style: none;
+  padding: 13px 28px;
+}
+
+.person__menu--item:hover {
+  background: #84c604;
+  color: #fff;
+  cursor: pointer;
+}
+
+.person__menu--refer {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  word-spacing: 2.8px;
+}
+
+.person__menu--refer i {
   margin-right: 10px;
   font-size: 19px;
   vertical-align: middle;
@@ -266,6 +290,81 @@ hr {
   font-size: 16px;
   margin-left: 7px;
   letter-spacing: 0.2px;
+}
+
+.section-title {
+  font-family: 'Lemon Tuesday';
+  font-size: 60px;
+  text-align: center;
+}
+
+.section-title:after, .section-title:before {
+  content: "";
+  background: url(assets/img/1.png) no-repeat;
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  background-size: contain;
+  background-position: 50%;
+  margin-left: -140px;
+}
+
+.section-title:after {
+  margin-left: 20px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.home__product {
+  padding-top: 75px;
+}
+
+.product__list {
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 0 10px;
+}
+
+.product__list--name {
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0 14px;
+}
+
+.product__list--info {
+  font-weight: 600;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: -0.4px;
+}
+
+.product__list--info-price {
+  padding: 20px 0;
+  font-size: 21px;
+  font-weight: 700;
+  font-family: 'Roboto Slab', serif;
+}
+
+.product__list--button-by {
+  background: #fd4f10;
+  color: #fff;
+  padding: 8px;
+  text-align: center;
+  width: 196px;
+  margin: auto;
+  letter-spacing: 0.7px;
+}
+
+.product__list--button-by img {
+  width: 25px;
+  margin-left: 25px;
+}
+
+.product-list--image img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
 }
 
 .footer {

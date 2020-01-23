@@ -11,7 +11,7 @@ $color2:#fff;
 $color3:#84c604;
 $color4: #20b80b;
 
-*{
+body{
     font-family: $font-stack;
 }
 
@@ -73,7 +73,6 @@ hr {
 }
 
 .nav{
-    width: 100%;
 
     &__menu {
         display: flex;
@@ -83,7 +82,34 @@ hr {
 
         &--item{
             list-style: none;
-            padding: 13px 30px;
+            padding: 13px 28px;
+            
+            &:hover {
+                background: $color3;
+                color: $color2;
+                cursor: pointer;
+            }
+        }
+        
+        &--refer {
+            font-family: 'Open Sans';
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            word-spacing: 2.8px;
+        }
+    }
+}
+.person{
+    &__menu {
+        display: flex;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 0;
+
+        &--item{
+            list-style: none;
+            padding: 13px 28px;
             
             &:hover {
                 background: $color3;
@@ -108,6 +134,7 @@ hr {
             }
         }
     }
+
 }
 
 .banner{
@@ -175,6 +202,74 @@ hr {
         }
     }
 }
+.section-title {
+    font-family: 'Lemon Tuesday';
+    font-size: 60px;
+    text-align: center;
+
+    &:after, &:before {
+        content: "";
+        background: url(assets/img/1.png) no-repeat;
+        position: absolute;
+        width: 120px;
+        height: 60px;
+        background-size: contain;
+        background-position: 50%;
+        margin-left: -140px;
+    }
+    &:after {
+        margin-left: 20px;
+        transform: scaleX(-1);
+    }
+}
+.home__product {
+    padding-top: 75px;
+}
+.product__list{
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 0 10px;
+    &--name {
+        font-weight: 700;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px 0 14px;
+    }
+    &--info {
+        font-weight: 600;
+        text-align: center;
+        font-size: 12px;
+        letter-spacing: -0.4px;
+    }
+    &--info-price {
+        padding: 20px 0;
+        font-size: 21px;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+    }
+
+
+    &--button-by {
+        background: #fd4f10;
+        color: #fff;
+        padding: 8px;
+        text-align: center;
+        width: 196px;
+        margin: auto;
+        letter-spacing: 0.7px;
+
+        img {
+            width: 25px;
+            margin-left: 25px;
+        }
+    }
+}
+.product-list--image img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
 
 .footer{
     background: #1a2d34;
