@@ -10,14 +10,14 @@ $color1:#000;
 $color2:#fff;
 $color3:#84c604;
 $color4: #20b80b;
-
+main{
+    padding-top: 149px;
+}
 body{
     font-family: $font-stack;
-}
-
-body{
     margin: auto;
 }
+
 .container{
     width: $width-container;
     margin: auto;
@@ -33,8 +33,16 @@ hr {
     text-transform: uppercase;
     font-size: 14px;
 }
-.header .container {
-    padding: 0;
+.header{
+    position: fixed;
+    background: #fff;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    
+    .container {
+        padding: 0;
+    }
 }
 .header__logo {
     padding: 9px 19px;
@@ -71,7 +79,13 @@ hr {
     }
 
 }
+.header .container:last-child .row {
+    justify-content: space-between;
+}
+
 .nav{
+    padding-right: 0;
+    margin-left: 20px;
 
     &__menu {
         display: flex;
@@ -81,12 +95,17 @@ hr {
 
         &--item{
             list-style: none;
-            padding: 13px 28px;
+            padding: 13px 33px;
             
             &:hover {
                 background: $color3;
                 color: $color2;
                 cursor: pointer;
+
+                a{
+                    color:#fff;
+                    text-decoration: none;
+                }
             }
         }
         
@@ -96,6 +115,7 @@ hr {
             font-size: 14px;
             text-transform: uppercase;
             word-spacing: 2.8px;
+            color: #000;
         }
     }
 }
@@ -105,15 +125,21 @@ hr {
         padding: 0;
         width: 100%;
         margin-bottom: 0;
+        justify-content: flex-end;
 
         &--item{
             list-style: none;
-            padding: 13px 28px;
+            padding: 13px 33px;
             
             &:hover {
                 background: $color3;
                 color: $color2;
                 cursor: pointer;
+
+                a{
+                    color:#fff;
+                    text-decoration: none;
+                }
             }
         }
         
@@ -123,14 +149,12 @@ hr {
             font-size: 14px;
             text-transform: uppercase;
             word-spacing: 2.8px;
+            color: #000;
+        }
 
-            i{
-                margin-right: 10px;
-                font-size: 19px;
-                vertical-align: middle;
-                color: #20b80b;
-                
-            }
+        &--img{
+            margin-right: 10px;
+            vertical-align: middle;
         }
     }
 
@@ -228,6 +252,7 @@ hr {
     padding-bottom: 75px;
     .container{
         padding: 0;
+        transform: translateX(7px);
     }
 }
 .product__list{
@@ -235,6 +260,7 @@ hr {
     border-radius: 10px;
     box-shadow: 0 0 29px -4px rgba(0,0,0,0.2);
     padding-bottom: 35px;
+    position: relative;
 
     &--image {
         height: 228px;
@@ -252,6 +278,7 @@ hr {
         font-size: 20px;
         text-align: center;
         padding: 20px 0 14px;
+        letter-spacing: -0.4px;
     }
     &--info {
         font-weight: 600;
@@ -260,16 +287,15 @@ hr {
         letter-spacing: -0.4px;
     }
     &--info-price {
-        padding: 20px 0;
+        padding: 18px 0 20px;
         font-size: 21px;
         font-weight: 700;
         font-family: 'Roboto Slab', serif;
         display: flex;
-       
+        justify-content: space-around;
     }
     &--price{
-        width: 63%;
-        text-align: center;
+
         sup{
             font-size: 12px;
         }
@@ -284,18 +310,52 @@ hr {
         margin: auto;
         letter-spacing: 0.7px;
 
+        &:hover {
+            background: #84c604;
+            cursor: pointer;
+        }
+
         img {
             width: 25px;
             margin-left: 25px;
         }
     }
 }
+.hit:after {
+    content: 'хит';
+    position: absolute;
+    top: 11px;
+    right: 13px;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #fff;
+    background: #f05745;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    padding-top: 14px;
+}
+.veg:after {
+    content: 'veg';
+    position: absolute;
+    top: 11px;
+    right: 13px;
+    border-radius: 50%;
+    font-weight: 700;
+    color: #fff;
+    background: #469403;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    padding-top: 14px;
+}
 .quantity {
-    position: relative;
-    &:before {
-        content: '-';
-        position: absolute;
-        top: 12px;
+    display: flex;
+    &-controls-min,&-controls-max {
         font-family: open sans;
         font-weight: 100;
         font-size: 20px;
@@ -305,23 +365,16 @@ hr {
         width: 13px;
         height: 13px;
         text-align: center;
-        left: -13px;
         color: #808080;
-    }
-    &:after {
-        content: '+';
-        position: absolute;
-        font-family: open sans;
-        font-weight: 100;
-        font-size: 14px;
-        border: 1px solid;
-        border-radius: 50%;
-        line-height: 0.8;
-        width: 13px;
-        height: 13px;
-        text-align: center;
-        top: 12px;
-        color: #808080;
+        cursor: pointer;
+        margin-top: 10px;
+        &:hover{
+            color: #333333; 
+        }
+       }
+    &-controls-max{
+        font-size: 15px;
+        line-height: 0.7;
     }
     input[type="number"] {
         border: none;
@@ -358,6 +411,11 @@ hr {
                 margin-bottom: 30px;
             }
         }
+
+        &--image {
+            padding: 0 10px;
+            margin-top: 32px;
+        }
     }
 
 }
@@ -367,6 +425,8 @@ hr {
     
     .container{
         padding-top: 67px;
+        padding-left: 0;
+        padding-right: 0;
     }
     .row{
         justify-content: space-between;
@@ -378,16 +438,6 @@ hr {
     }
     
     &__item{
-        
-        &:nth-child(1){
-            padding: 0 15px 0 0;
-        }
-        &:nth-child(2){
-            padding: 2px 0 0 12px;
-        }
-        &:nth-child(3),&:nth-child(4),&:nth-child(5){
-        padding: 2px 0 0 0;
-        }
 
         &--menu {
             padding: 0;
@@ -398,6 +448,11 @@ hr {
         &--refer{
             font-size: 12px;
             color: #67919f;
+
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
         }
         &--title {
             color: #fff;
@@ -414,23 +469,71 @@ hr {
             text-transform: uppercase;
         }
         &--bottom-refer{
-            
+            text-decoration: underline;
             font-size: 12px;
             color: #67919f;
+            
+            &:hover {
+                color: #fff;
+            }
         }
         
+    }    
+}
+.footer__top{
+    .footer__item{
+        max-width: 200px;
+        padding: 0 10px;
+
+    &:nth-child(1) {
+        min-width: 212px;
+        padding-left: 25px;
     }
+    &:nth-child(2) {
+        min-width: 220px;
+        margin-top: 2px;
+    }
+    &:nth-child(3) {
+        margin-top: 33px;
+        min-width: 110px;
+    }
+    &:nth-child(4) {
+        padding-top: 3px;
+        min-width: 226px;
+    }
+    &:nth-child(5),&:nth-child(6) {
+        padding-top: 2px;
+        min-width: 124px;
+    }
+}
+}
+
+
+.footer__bottom{
+    align-items: center;
+    margin: 0 -9px 0 0;
+
+    .footer__item{
+
+    &:nth-child(3) {
+        padding: 0;
+    }
+}
 }
 
 .social-icon {
     display: flex;
     margin: 0;
     padding: 0;
-
+    text-align: right;
+    float: right;
+    
     &__item {
         list-style: none;
         padding: 0 10px;
-
+        &:nth-child(3){
+            padding-right: 0;
+        }
         &--refer {
             background: #8d969a;
             border-radius: 50%;
@@ -440,6 +543,19 @@ hr {
             justify-content: center;
             align-items: center;
             margin: 0 0 0 -3px;
+
+            &:hover {
+                background: #fff;
+                text-decoration: none;
+                transform: scale(1.5);
+                transition: 0.3s;
+               
+                & i{
+                    transform: scale(1.1);
+                    transition: 0.3s;
+                }
+            }
+
             i{
                 color: #1a2d34;
             }

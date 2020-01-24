@@ -28,20 +28,24 @@
             <hr>
             <div class="container">
                 <div class="row">
-                <nav class="col-8 nav">
+                <nav class="nav">
                     <ul class="nav__menu">
-                        <li class="nav__menu--item"><a class="nav__menu--refer">Меню</a></li>
-                        <li class="nav__menu--item"><a class="nav__menu--refer">Акции и скидки</a></li>
-                        <li class="nav__menu--item"><a class="nav__menu--refer">Доставка и оплата</a></li>
-                        <li class="nav__menu--item"><a class="nav__menu--refer">Новости</a></li>
-                        <li class="nav__menu--item"><a class="nav__menu--refer">Контакты</a></li>
+                        <li class="nav__menu--item"><a href="javascript:void(0)" class="nav__menu--refer">Меню</a></li>
+                        <li class="nav__menu--item"><a href="javascript:void(0)" class="nav__menu--refer">Акции и скидки</a></li>
+                        <li class="nav__menu--item"><a href="javascript:void(0)" class="nav__menu--refer">Доставка и оплата</a></li>
+                        <li class="nav__menu--item"><a href="javascript:void(0)" class="nav__menu--refer">Новости</a></li>
+                        <li class="nav__menu--item"><a href="javascript:void(0)" class="nav__menu--refer">Контакты</a></li>
                     </ul>
                     
                 </nav>
-                <div class="col-4 person">
+                <div class="person">
                     <ul class="person__menu">
-                        <li class="person__menu--item"><a class="person__menu--refer"><i class="fas fa-user-friends"></i>Кабинет</a></li>
-                        <li class="person__menu--item"><a class="person__menu--refer"><i class="fas fa-shopping-cart"></i>Корзина</a></li>
+                        <li class="person__menu--item">
+                            <a href="javascript:void(0)" class="person__menu--refer"><img class="person__menu--img" src="assets/img/user.png">Кабинет</a>
+                        </li>
+                        <li class="person__menu--item">
+                            <a href="javascript:void(0)" class="person__menu--refer"><img class="person__menu--img" src="assets/img/cart.png">Корзина</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -63,16 +67,18 @@
                     <h2 class="section-title">Сеты</h2>
                     <div class="row">
                         <div class="col-3">
-                            <div class="product__list"> 
+                            <div class="product__list hit"> 
                             <div class="product__list--image">
                                 <img src="assets/img/product1.jpg">
                             </div>
                             <div class="product__list--name">Сет №10</div>
                             <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
                             <div class="product__list--info-price">
-                                <div class="product__list--price">2 050 <sup>руб.</sup></div>
+                                <div class="product__list--price"><span class="price">2 050</span> <sup>руб.</sup></div>
                                 <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
                                     <input name="quantity" value="1" type="number">
+                                    <div class="quantity-controls-max">+</div>
                                 </div>
                             </div>
                             <div class="product__list--button">
@@ -88,9 +94,11 @@
                             <div class="product__list--name">Сет №8</div>
                             <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
                             <div class="product__list--info-price">
-                                <div class="product__list--price">1 590 <sup>руб.</sup></div>
+                                <div class="product__list--price"><span class="price">1 590</span> <sup>руб.</sup></div>
                                 <div class="quantity">
-                                    <input name="quantity" value="1" type="number">                                   
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number">
+                                    <div class="quantity-controls-max">+</div>                                 
                                 </div>
                             </div>
                             <div class="product__list--button">
@@ -106,9 +114,11 @@
                             <div class="product__list--name">Минисет №5</div>
                             <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
                             <div class="product__list--info-price">
-                                <div class="product__list--price">510 <sup>руб.</sup></div>
+                                <div class="product__list--price"><span class="price">510</span> <sup>руб.</sup></div>
                                 <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
                                     <input name="quantity" value="1" type="number">
+                                    <div class="quantity-controls-max">+</div>
                                 </div>
                             </div>
                             <div class="product__list--button">
@@ -117,16 +127,18 @@
                             </div>
                         </div>
                         <div class="col-3">
-                            <div class="product__list"> 
+                            <div class="product__list veg"> 
                             <div class="product__list--image">
                                 <img src="assets/img/product4.jpg">
                             </div>
                             <div class="product__list--name">Сет №6</div>
                             <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
                             <div class="product__list--info-price">
-                                <div class="product__list--price">400 <sup>руб.</sup></div>
+                                <div class="product__list--price"><span class="price">400</span> <sup>руб.</sup></div>
                                 <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
                                     <input name="quantity" value="1" type="number">
+                                    <div class="quantity-controls-max">+</div>
                                  </div>
                             </div>
                             <div class="product__list--button">
@@ -158,18 +170,18 @@
         </main>
         <footer class="footer">
             <div class="container">
-                <div class="row">
+                <div class="row footer__top">
                     <div class="footer__item">
                         <ul class="footer__item--menu">
-                            <li class="footer__item--menu-item"><a href="#" class="footer__item--title">Суши</a></li>
-                            <li class="footer__item--menu-item"><a href="#" class="footer__item--title">Гунканы</a></li>
-                            <li class="footer__item--menu-item"><a href="#" class="footer__item--title">Инари</a></li>
-                            <li class="footer__item--menu-item"><a href="#" class="footer__item--title">Супы</a></li>
-                            <li class="footer__item--menu-item"><a href="#" class="footer__item--title">Салаты</a></li>
-                            <li class="footer__item--menu-item"><a href="#" class="footer__item--title">Горячие закуски</a></li>
-                            <li class="footer__item--menu-item"><a href="#" class="footer__item--title">Десерты</a></li>
-                            <li class="footer__item--menu-item"><a href="#" class="footer__item--title">Напитки</a></li>
-                            <li class="footer__item--menu-item"><a href="#" class="footer__item--title">Дополнительно</a></li>
+                            <li class="footer__item--menu-item"><a  href="javascript:void(0)" class="footer__item--title">Суши</a></li>
+                            <li class="footer__item--menu-item"><a  href="javascript:void(0)" class="footer__item--title">Гунканы</a></li>
+                            <li class="footer__item--menu-item"><a  href="javascript:void(0)" class="footer__item--title">Инари</a></li>
+                            <li class="footer__item--menu-item"><a  href="javascript:void(0)" class="footer__item--title">Супы</a></li>
+                            <li class="footer__item--menu-item"><a  href="javascript:void(0)" class="footer__item--title">Салаты</a></li>
+                            <li class="footer__item--menu-item"><a  href="javascript:void(0)" class="footer__item--title">Горячие закуски</a></li>
+                            <li class="footer__item--menu-item"><a  href="javascript:void(0)" class="footer__item--title">Десерты</a></li>
+                            <li class="footer__item--menu-item"><a  href="javascript:void(0)" class="footer__item--title">Напитки</a></li>
+                            <li class="footer__item--menu-item"><a  href="javascript:void(0)" class="footer__item--title">Дополнительно</a></li>
                         </ul>
                     </div>
                     
@@ -177,76 +189,73 @@
                         <p class="footer__item--title">Сеты</p>
                         <div class="footer__item--column">
                             <ul class="footer__item--menu">
-                                <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">До 500 руб.</a></li>
-                                <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">До 1000 руб.(для двоих)</a></li>
-                                <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">До 1500 руб.(для двоих - троих)</a></li>
-                                <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">До 2000 руб.(большая компания)</a></li>
-                                <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">от 2000 руб.(очень большая компания)</a></li>
-                            </ul>
-                            <ul class="footer__item--menu">
-                                <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">С угрем</a></li>
-                                <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Горячие</a></li>
-                                <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Запеченые</a></li>
-                                <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Суши</a></li>
+                                <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">До 500 руб.</a></li>
+                                <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">До 1000 руб.(для двоих)</a></li>
+                                <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">До 1500 руб.(для двоих - троих)</a></li>
+                                <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">До 2000 руб.(большая компания)</a></li>
+                                <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">от 2000 руб.(очень большая компания)</a></li>
                             </ul>
                         </div>
                     </div>
-                    
+                    <div class="footer__item">
+                        <ul class="footer__item--menu">
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">С угрем</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Горячие</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Запеченые</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Суши</a></li>
+                        </ul>
+                    </div>
+
                     <div class="footer__item">
                             <p class="footer__item--title">Роллы</p>
                         <ul class="footer__item--menu">
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Традиционные/Классические</a></li>
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Простые</a></li>
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Теплые</a></li>
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Запеченые</a></li>
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Вегитарианские</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Традиционные/Классические</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Простые</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Теплые</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Запеченые</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Вегитарианские</a></li>
                         </ul>
                     </div>
                     
                     <div class="footer__item">
                             <p class="footer__item--title">Вок</p>
                         <ul class="footer__item--menu">
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Яичная</a></li>
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Удон</a></li>
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Гречневая</a></li>
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Стеклянная</a></li>
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Рис</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Яичная</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Удон</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Гречневая</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Стеклянная</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Рис</a></li>
                         </ul></div>
                     
                     <div class="footer__item">
                             <p class="footer__item--title">Пицца</p>
                         <ul class="footer__item--menu">
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Мясная</a></li>
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Рыбная</a></li>
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Сырная</a></li>
-                            <li class="footer__item--menu-item"><a class="footer__item--refer" href="#">Вегитарианская</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Мясная</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Рыбная</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Сырная</a></li>
+                            <li class="footer__item--menu-item"><a class="footer__item--refer"  href="javascript:void(0)">Вегитарианская</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="row">
-                    <p class="footer__item footer__item--copyright">Миюши © <script> var d = new Date();var curr_year = d.getFullYear();document.write(curr_year); </script></p>
-                    <p class="footer__item"><a class="footer__item--bottom-refer" href="">Соглашение на обработку персональных данных</a></p>
-                    <div class="footer__item">
+                <div class="row footer__bottom">
+                    <p class="col-2 footer__item footer__item--copyright">Миюши © <script> var d = new Date();var curr_year = d.getFullYear();document.write(curr_year); </script></p>
+                    <p class="col-8 footer__item"><a class="footer__item--bottom-refer" href="">Соглашение на обработку персональных данных</a></p>
+                    <div class="col-1 footer__item">
                         <ul class="social-icon footer__item--social">
                             <li class="social-icon__item">
-                                <a href="#" class="social-icon__item--refer">
-                                    <i class="fab fa-instagram"></i>
-                                </a>
+                                <a href="javascript:void(0)" class="social-icon__item--refer"><i class="fab fa-instagram"></i></a>
                             </li>
                             <li class="social-icon__item">
-                                <a href="#" class="social-icon__item--refer">
-                                    <i class="fab fa-vk"></i>
-                                </a>
+                                <a href="javascript:void(0)" class="social-icon__item--refer"><i class="fab fa-vk"></i></a>
                             </li>
                             <li class="social-icon__item">
-                                <a href="#" class="social-icon__item--refer">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
+                                <a href="javascript:void(0)" class="social-icon__item--refer"><i class="fab fa-facebook-f"></i></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </footer>
+        <script type="text/javascript" src="script.js"></script></body>
     </body>
 </html>
