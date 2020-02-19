@@ -4,6 +4,11 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <meta charset="utf-8">
         <title>Miushi</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
         <!--<link rel="shortcut icon" href="assets/img/ogo.svg" type="image/png">-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
@@ -51,8 +56,8 @@
             </div>
 
         </header>
-        <main>
-            <section class="banner">
+        <main><div class="swiper-container"><div class="swiper-wrapper">
+            <section class="banner swiper-slide">
                 <div class="container">
                     <div class="banner--info">
                         <div class="banner--info--title">Счастливые часы</div>
@@ -62,6 +67,41 @@
 
                 </div>
             </section>
+            <section class="banner swiper-slide">
+                <div class="container">
+                    <div class="banner--info">
+                        <div class="banner--info--title">Счастливые часы1</div>
+                        <p class="banner--info--time">с 11:00 до 16:00 в будние дни</p>
+                        <div class="button banner--info--button">Подробнее</div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="banner swiper-slide">
+                <div class="container">
+                    <div class="banner--info">
+                        <div class="banner--info--title">Счастливые часы2</div>
+                        <p class="banner--info--time">с 11:00 до 16:00 в будние дни</p>
+                        <div class="button banner--info--button">Подробнее</div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        </div>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                loop: true, 
+                autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+        </script>
             <section id="" class="home__product">
                 <div class="container">
                     <h2 class="section-title">Сеты</h2>
