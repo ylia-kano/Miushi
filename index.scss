@@ -159,6 +159,22 @@ hr {
     }
 
 }
+.basket{
+    position: relative;
+    .basket-mini {
+        content: '0';
+        position: absolute;
+        top: -5px;
+        left: 12px;
+        background: #fd4f10;
+        padding: 0 4px;
+        border-radius: 5px;
+        height: 15px;
+        color: #fff;
+        line-height: 1.4;
+        font-size: 12px;
+    }
+}
 
 .banner{
     background: url(assets/img/banner.jpg);
@@ -294,9 +310,9 @@ hr {
         display: flex;
         justify-content: space-around;
     }
-    &--price{
+    &--price {
 
-        sup{
+        sup {
             font-size: 12px;
         }
     }
@@ -304,11 +320,12 @@ hr {
     &--button-by {
         background: #fd4f10;
         color: #fff;
-        padding: 8px;
-        text-align: center;
+        padding: 8px 30px;
+        text-align: left;
         width: 196px;
         margin: auto;
         letter-spacing: 0.7px;
+        position: relative;
 
         &:hover {
             background: #84c604;
@@ -318,6 +335,14 @@ hr {
         img {
             width: 25px;
             margin-left: 25px;
+        }
+        &:after {
+            content: url(assets/img/online-shopping-cart.svg);
+            width: 26px;
+            height: 27px;
+            position: absolute;
+            right: 24px;
+            top: 5px;
         }
     }
 }
@@ -385,6 +410,9 @@ hr {
 
         &::-webkit-inner-spin-button {
             display: none;
+        }
+        &:focus{
+            outline: none;
         }
     }
 }
