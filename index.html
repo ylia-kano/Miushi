@@ -5,13 +5,16 @@
         <meta charset="utf-8">
         <title>Miushi</title>
         <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-
-<script src="https://unpkg.com/swiper/js/swiper.js"></script>
-<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+        <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
         <!--<link rel="shortcut icon" href="assets/img/ogo.svg" type="image/png">-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+        <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
         <link rel="stylesheet" href="index.css">    
     </head>
     <body>
@@ -56,7 +59,7 @@
             </div>
 
         </header>
-        <main><div class="swiper-container"><div class="swiper-wrapper">
+        <main><div class="swiper-container swiper-banner"><div class="swiper-wrapper">
             <section class="banner swiper-slide">
                 <div class="container">
                     <div class="banner--info">
@@ -89,24 +92,13 @@
             </section>
         </div>
         </div>
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-                loop: true, 
-                autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              },
-            });
-        </script>
+        
             <section id="" class="home__product">
                 <div class="container">
                     <h2 class="section-title">Сеты</h2>
-                    <div class="row">
-                        <div class="col-3">
+                    <div class="row swiper-container swiper-product">
+                        <div class="swiper-wrapper">
+                        <div class="col-3 swiper-slide">
                             <div class="product__list hit"> 
                             <div class="product__list--image">
                                 <img src="assets/img/product1.jpg">
@@ -126,7 +118,7 @@
                             </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 swiper-slide">
                             <div class="product__list"> 
                             <div class="product__list--image">
                                 <img src="assets/img/product2.jpg">
@@ -146,7 +138,7 @@
                             </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 swiper-slide">
                             <div class="product__list"> 
                             <div class="product__list--image">
                                 <img src="assets/img/product3.jpg">
@@ -166,7 +158,327 @@
                             </div>
                             </div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list veg"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product4.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №6</div>
+                            <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                    <div class="quantity-controls-max">+</div>
+                                 </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list hit"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product1.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №10</div>
+                            <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product2.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №8</div>
+                            <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>                                 
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product3.jpg">
+                            </div>
+                            <div class="product__list--name">Минисет №5</div>
+                            <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list veg"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product4.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №6</div>
+                            <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                    <div class="quantity-controls-max">+</div>
+                                 </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list hit"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product1.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №10</div>
+                            <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div> 
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product2.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №8</div>
+                            <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>                                 
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product3.jpg">
+                            </div>
+                            <div class="product__list--name">Минисет №5</div>
+                            <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list veg"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product4.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №6</div>
+                            <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                    <div class="quantity-controls-max">+</div>
+                                 </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list hit"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product1.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №10</div>
+                            <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product2.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №8</div>
+                            <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>                                 
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product3.jpg">
+                            </div>
+                            <div class="product__list--name">Минисет №5</div>
+                            <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list veg"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product4.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №6</div>
+                            <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                    <div class="quantity-controls-max">+</div>
+                                 </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list hit"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product1.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №10</div>
+                            <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product2.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №8</div>
+                            <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>                                 
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product3.jpg">
+                            </div>
+                            <div class="product__list--name">Минисет №5</div>
+                            <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
                             <div class="product__list veg"> 
                             <div class="product__list--image">
                                 <img src="assets/img/product4.jpg">
@@ -187,8 +499,1677 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    </div>
                 </div>
             </section>
+
+
+           <section id="" class="home__product">
+                <div class="container">
+                    <h2 class="section-title">Сеты</h2>
+                    <div class="row swiper-container swiper-product">
+                        <div class="swiper-wrapper">
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list hit"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product1.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №10</div>
+                            <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product2.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №8</div>
+                            <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>                                 
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product3.jpg">
+                            </div>
+                            <div class="product__list--name">Минисет №5</div>
+                            <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list veg"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product4.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №6</div>
+                            <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                    <div class="quantity-controls-max">+</div>
+                                 </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list hit"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product1.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №10</div>
+                            <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product2.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №8</div>
+                            <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>                                 
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product3.jpg">
+                            </div>
+                            <div class="product__list--name">Минисет №5</div>
+                            <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list veg"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product4.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №6</div>
+                            <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                    <div class="quantity-controls-max">+</div>
+                                 </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list hit"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product1.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №10</div>
+                            <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div> 
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product2.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №8</div>
+                            <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>                                 
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product3.jpg">
+                            </div>
+                            <div class="product__list--name">Минисет №5</div>
+                            <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list veg"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product4.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №6</div>
+                            <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                    <div class="quantity-controls-max">+</div>
+                                 </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list hit"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product1.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №10</div>
+                            <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product2.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №8</div>
+                            <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>                                 
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product3.jpg">
+                            </div>
+                            <div class="product__list--name">Минисет №5</div>
+                            <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list veg"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product4.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №6</div>
+                            <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                    <div class="quantity-controls-max">+</div>
+                                 </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list hit"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product1.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №10</div>
+                            <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product2.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №8</div>
+                            <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                   <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>                                 
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product3.jpg">
+                            </div>
+                            <div class="product__list--name">Минисет №5</div>
+                            <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" >
+                                    <div class="quantity-controls-max">+</div>
+                                </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-3 swiper-slide">
+                            <div class="product__list veg"> 
+                            <div class="product__list--image">
+                                <img src="assets/img/product4.jpg">
+                            </div>
+                            <div class="product__list--name">Сет №6</div>
+                            <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                            <div class="product__list--info-price">
+                                <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                <div class="quantity">
+                                    <div class="quantity-controls-min">-</div>
+                                    <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                    <div class="quantity-controls-max">+</div>
+                                 </div>
+                            </div>
+                            <div class="product__list--button">
+                                <div class="button product__list--button-by">В корзину</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="" class="home__product">
+                    <div class="container">
+                        <h2 class="section-title">Сеты</h2>
+                        <div class="row swiper-container swiper-product">
+                            <div class="swiper-wrapper">
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list hit"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product1.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №10</div>
+                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                       <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product2.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №8</div>
+                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                       <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>                                 
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product3.jpg">
+                                </div>
+                                <div class="product__list--name">Минисет №5</div>
+                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list veg"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product4.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №6</div>
+                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                        <div class="quantity-controls-max">+</div>
+                                     </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list hit"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product1.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №10</div>
+                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                       <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product2.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №8</div>
+                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                       <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>                                 
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product3.jpg">
+                                </div>
+                                <div class="product__list--name">Минисет №5</div>
+                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list veg"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product4.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №6</div>
+                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                        <div class="quantity-controls-max">+</div>
+                                     </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list hit"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product1.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №10</div>
+                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                       <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div> 
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product2.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №8</div>
+                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                       <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>                                 
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product3.jpg">
+                                </div>
+                                <div class="product__list--name">Минисет №5</div>
+                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list veg"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product4.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №6</div>
+                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                        <div class="quantity-controls-max">+</div>
+                                     </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list hit"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product1.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №10</div>
+                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                       <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product2.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №8</div>
+                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                       <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>                                 
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product3.jpg">
+                                </div>
+                                <div class="product__list--name">Минисет №5</div>
+                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list veg"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product4.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №6</div>
+                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                        <div class="quantity-controls-max">+</div>
+                                     </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list hit"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product1.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №10</div>
+                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                       <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product2.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №8</div>
+                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                       <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>                                 
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product3.jpg">
+                                </div>
+                                <div class="product__list--name">Минисет №5</div>
+                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" >
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-3 swiper-slide">
+                                <div class="product__list veg"> 
+                                <div class="product__list--image">
+                                    <img src="assets/img/product4.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №6</div>
+                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                        <div class="quantity-controls-max">+</div>
+                                     </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </section>
+                <section id="" class="home__product"> 
+                        <div class="container">
+                    
+                    <h2 class="section-title">ТАБЫ</h2>
+                        <ul class="nav nav-tabs" id="myTab" role="tablist"> 
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#new" role="tab" aria-controls="home" aria-selected="true">Новинки</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#actii" role="tab" aria-controls="profile" aria-selected="false">Акции</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row swiper-container swiper-product">
+                                <div class="swiper-wrapper">
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list hit"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product1.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №10</div>
+                                    <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product2.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №8</div>
+                                    <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>                                 
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product3.jpg">
+                                    </div>
+                                    <div class="product__list--name">Минисет №5</div>
+                                    <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list veg"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product4.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №6</div>
+                                    <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                            <div class="quantity-controls-max">+</div>
+                                         </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list hit"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product1.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №10</div>
+                                    <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product2.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №8</div>
+                                    <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>                                 
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product3.jpg">
+                                    </div>
+                                    <div class="product__list--name">Минисет №5</div>
+                                    <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list veg"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product4.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №6</div>
+                                    <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                            <div class="quantity-controls-max">+</div>
+                                         </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list hit"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product1.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №10</div>
+                                    <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div> 
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product2.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №8</div>
+                                    <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>                                 
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product3.jpg">
+                                    </div>
+                                    <div class="product__list--name">Минисет №5</div>
+                                    <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list veg"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product4.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №6</div>
+                                    <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                            <div class="quantity-controls-max">+</div>
+                                         </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list hit"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product1.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №10</div>
+                                    <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product2.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №8</div>
+                                    <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>                                 
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product3.jpg">
+                                    </div>
+                                    <div class="product__list--name">Минисет №5</div>
+                                    <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list veg"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product4.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №6</div>
+                                    <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                            <div class="quantity-controls-max">+</div>
+                                         </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list hit"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product1.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №10</div>
+                                    <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product2.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №8</div>
+                                    <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>                                 
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product3.jpg">
+                                    </div>
+                                    <div class="product__list--name">Минисет №5</div>
+                                    <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list veg"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product4.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №6</div>
+                                    <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                            <div class="quantity-controls-max">+</div>
+                                         </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            </div>
+                            </div>
+
+                            <div class="tab-pane fade" id="actii" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="row swiper-container swiper-product">
+                                <div class="swiper-wrapper">
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list hit"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product1.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №100000</div>
+                                    <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product2.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №8</div>
+                                    <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>                                 
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product3.jpg">
+                                    </div>
+                                    <div class="product__list--name">Минисет №5</div>
+                                    <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list veg"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product4.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №6</div>
+                                    <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                            <div class="quantity-controls-max">+</div>
+                                         </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list hit"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product1.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №10</div>
+                                    <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product2.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №8</div>
+                                    <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>                                 
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product3.jpg">
+                                    </div>
+                                    <div class="product__list--name">Минисет №5</div>
+                                    <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list veg"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product4.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №6</div>
+                                    <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                            <div class="quantity-controls-max">+</div>
+                                         </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list hit"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product1.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №10</div>
+                                    <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div> 
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product2.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №8</div>
+                                    <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>                                 
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product3.jpg">
+                                    </div>
+                                    <div class="product__list--name">Минисет №5</div>
+                                    <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list veg"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product4.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №6</div>
+                                    <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                            <div class="quantity-controls-max">+</div>
+                                         </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list hit"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product1.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №10</div>
+                                    <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product2.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №8</div>
+                                    <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>                                 
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product3.jpg">
+                                    </div>
+                                    <div class="product__list--name">Минисет №5</div>
+                                    <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list veg"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product4.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №6</div>
+                                    <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                            <div class="quantity-controls-max">+</div>
+                                         </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list hit"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product1.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №10</div>
+                                    <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="2050">2050</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product2.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №8</div>
+                                    <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="1590">1 590</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                           <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>                                 
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product3.jpg">
+                                    </div>
+                                    <div class="product__list--name">Минисет №5</div>
+                                    <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="510">510</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" >
+                                            <div class="quantity-controls-max">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 swiper-slide">
+                                    <div class="product__list veg"> 
+                                    <div class="product__list--image">
+                                        <img src="assets/img/product4.jpg">
+                                    </div>
+                                    <div class="product__list--name">Сет №6</div>
+                                    <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                    <div class="product__list--info-price">
+                                        <div class="product__list--price"><span class="price" value="400">400</span> <sup>руб.</sup></div>
+                                        <div class="quantity">
+                                            <div class="quantity-controls-min">-</div>
+                                            <input name="quantity" value="1" type="number" readonly="readonly" > 
+                                            <div class="quantity-controls-max">+</div>
+                                         </div>
+                                    </div>
+                                    <div class="product__list--button">
+                                        <div class="button product__list--button-by">В корзину</div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                    </section>
+
+
             <section id="" class="about">
                 <div class="container">
                     <h2 class="section-title">О компании</h2>

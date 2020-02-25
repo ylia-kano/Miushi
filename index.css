@@ -739,4 +739,27 @@ hr {
 .social-icon__item--refer i {
   color: #1a2d34;
 }
+
+/* swiper */
+.swiper-product {
+  padding-bottom: 60px;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: medium;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: grey;
+  top: auto;
+  bottom: 0;
+}
+
+.swiper-button-next {
+  right: 40%;
+}
+
+.swiper-button-prev {
+  left: 40%;
+}
 /*# sourceMappingURL=index.css.map */

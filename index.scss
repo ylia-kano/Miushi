@@ -178,7 +178,7 @@ hr {
 
 .banner{
     background: url(assets/img/banner.jpg);
-
+    
     .container{
         padding-left: 0;
         padding-right: 0;
@@ -589,4 +589,26 @@ hr {
             }
         } 
     }
+}
+
+
+
+/* swiper */
+
+.swiper-product {
+    padding-bottom: 60px;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: medium;
+}
+.swiper-button-next, .swiper-button-prev {
+    color: grey;
+    top: auto;
+    bottom: 0;
+}
+.swiper-button-next {
+    right: 40%;
+}
+.swiper-button-prev {
+    left: 40%;
 }

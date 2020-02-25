@@ -47,5 +47,28 @@ var minus = function (number) {
         --number.querySelector("input[name='quantity']").value;
         return  number.parentElement.querySelector('.price').textContent =  number.parentElement.querySelector('.price').textContent - number.parentElement.querySelector('.price').getAttribute('value');
     }
-    
 };
+
+
+
+
+var swiper = new Swiper('.swiper-banner', {
+    loop: true, 
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+});
+
+
+var swiper1 = new Swiper('.swiper-product', {
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+});
