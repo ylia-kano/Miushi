@@ -15,6 +15,7 @@ document.addEventListener('click', function (e) {
     }
 });
 */
+var summa = 0;
 
 for (var i = 0; i < document.querySelectorAll('.quantity-controls-max').length; i++) {
     document.querySelectorAll('.quantity-controls-max')[i].addEventListener('click', function (e) {
@@ -32,8 +33,9 @@ for (var i = 0; i < document.querySelectorAll('.product__list--button-by').lengt
     document.querySelectorAll('.product__list--button-by')[i].addEventListener('click', function (e) {
         this.textContent = 'В корзине';
         this.style.background = '#2dac18';
-        document.querySelector('.basket-mini').textContent = e.target.parentElement.parentElement.parentElement.querySelector("input[name='quantity']").value;
-        document.querySelector('.basket').setAttribute('title', 'Сумма: ' + e.target.parentElement.parentElement.parentElement.querySelector('.price').textContent + ' руб.');
+        document.querySelector('.basket-mini').textContent = Number(document.querySelector('.basket-mini').textContent) + Number(e.target.parentElement.parentElement.parentElement.querySelector("input[name='quantity']").value);
+        summa = summa + Number(e.target.parentElement.parentElement.parentElement.querySelector('.price').getAttribute('value'));
+        document.querySelector('.basket').setAttribute('title', 'Сумма: ' + summa + ' руб.');
     });
 }
 
