@@ -26,7 +26,7 @@
         rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -38,7 +38,8 @@
                     <img src="assets/img/burger.png">
                 </div>
                 <div class="col-8 col-md-5 col-lg-7 header__logo">
-                    <img src="assets/img/logo.png">
+                    <img class="logo-desctop" src="assets/img/logo.png">
+                    <img class="logo-mobile" src='assets/img/logo-mini.png'>
                 </div>
                 <div class="col-md-7 col-lg-5 header__info header__info--mobile">
                     <div class="header__info--info">
@@ -52,7 +53,7 @@
         <hr>
         <div class="container">
             <div class="row">
-                <nav class="nav">
+                <nav class="nav" id="menu-nav">
                     <ul class="nav__menu">
                         <li class="nav__menu--item"><a href="javascript:void(0)" class="nav__menu--refer">Меню</a></li>
                         <li class="nav__menu--item"><a href="javascript:void(0)" class="nav__menu--refer">Акции и
@@ -81,12 +82,13 @@
                     </ul>
                 </div>
             </div>
+        </div>
 
     </header>
     <main>
         <div class="swiper-container swiper-banner">
             <div class="swiper-wrapper">
-                <section class="banner swiper-slide">
+                <div class="banner swiper-slide">
                     <div class="container">
                         <div class="col-12 col-sm-8 col-md-12 banner--info">
                             <div class="banner--info--title">Счастливые часы</div>
@@ -95,8 +97,8 @@
                         </div>
 
                     </div>
-                </section>
-                <section class="banner swiper-slide">
+                </div>
+                <div class="banner swiper-slide">
                     <div class="container">
                         <div class="col-12 col-sm-8 col-md-12 banner--info">
                             <div class="banner--info--title">Счастливые часы1</div>
@@ -105,8 +107,8 @@
                         </div>
 
                     </div>
-                </section>
-                <section class="banner swiper-slide">
+                </div>
+                <div class="banner swiper-slide">
                     <div class="container">
                         <div class="col-12 col-sm-8 col-md-12 banner--info">
                             <div class="banner--info--title">Счастливые часы2</div>
@@ -115,8 +117,9 @@
                         </div>
 
                     </div>
-                </section>
+                </div>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
 
         <section id="" class="home__product">
@@ -124,7 +127,7 @@
                 <h2 class="section-title">Сеты</h2>
                 <div class="row swiper-container swiper-product">
                     <div class="swiper-wrapper">
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list hit">
                                 <div class="product__list--image">
                                     <img src="assets/img/product1.jpg">
@@ -145,7 +148,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product2.jpg">
@@ -166,7 +169,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product3.jpg">
@@ -187,7 +190,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list veg">
                                 <div class="product__list--image">
                                     <img src="assets/img/product4.jpg">
@@ -208,7 +211,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list hit">
                                 <div class="product__list--image">
                                     <img src="assets/img/product1.jpg">
@@ -229,7 +232,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product2.jpg">
@@ -250,7 +253,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product3.jpg">
@@ -271,7 +274,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list veg">
                                 <div class="product__list--image">
                                     <img src="assets/img/product4.jpg">
@@ -292,7 +295,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list hit">
                                 <div class="product__list--image">
                                     <img src="assets/img/product1.jpg">
@@ -313,7 +316,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product2.jpg">
@@ -334,7 +337,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product3.jpg">
@@ -355,7 +358,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list veg">
                                 <div class="product__list--image">
                                     <img src="assets/img/product4.jpg">
@@ -376,7 +379,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list hit">
                                 <div class="product__list--image">
                                     <img src="assets/img/product1.jpg">
@@ -397,7 +400,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product2.jpg">
@@ -418,7 +421,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product3.jpg">
@@ -439,7 +442,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list veg">
                                 <div class="product__list--image">
                                     <img src="assets/img/product4.jpg">
@@ -460,7 +463,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list hit">
                                 <div class="product__list--image">
                                     <img src="assets/img/product1.jpg">
@@ -481,7 +484,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product2.jpg">
@@ -502,7 +505,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product3.jpg">
@@ -523,7 +526,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list veg">
                                 <div class="product__list--image">
                                     <img src="assets/img/product4.jpg">
@@ -552,446 +555,13 @@
             </div>
         </section>
 
-
-        <section id="" class="home__product">
-            <div class="container">
-                <h2 class="section-title">Сеты</h2>
-                <div class="row swiper-container swiper-product">
-                    <div class="swiper-wrapper">
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list hit">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product1.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №10</div>
-                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="2050">2 050</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product2.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №8</div>
-                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="1590">1 590</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product3.jpg">
-                                </div>
-                                <div class="product__list--name">Минисет №5</div>
-                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="510">510</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list veg">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product4.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №6</div>
-                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="400">400</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list hit">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product1.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №10</div>
-                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="2050">2 050</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product2.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №8</div>
-                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="1590">1 590</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product3.jpg">
-                                </div>
-                                <div class="product__list--name">Минисет №5</div>
-                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="510">510</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list veg">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product4.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №6</div>
-                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="400">400</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list hit">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product1.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №10</div>
-                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="2050">2 050</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product2.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №8</div>
-                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="1590">1 590</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product3.jpg">
-                                </div>
-                                <div class="product__list--name">Минисет №5</div>
-                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="510">510</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list veg">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product4.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №6</div>
-                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="400">400</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list hit">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product1.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №10</div>
-                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="2050">2 050</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product2.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №8</div>
-                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="1590">1 590</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product3.jpg">
-                                </div>
-                                <div class="product__list--name">Минисет №5</div>
-                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="510">510</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list veg">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product4.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №6</div>
-                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="400">400</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list hit">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product1.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №10</div>
-                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="2050">2 050</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product2.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №8</div>
-                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="1590">1 590</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product3.jpg">
-                                </div>
-                                <div class="product__list--name">Минисет №5</div>
-                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="510">510</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
-                            <div class="product__list veg">
-                                <div class="product__list--image">
-                                    <img src="assets/img/product4.jpg">
-                                </div>
-                                <div class="product__list--name">Сет №6</div>
-                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
-                                <div class="product__list--info-price">
-                                    <div class="product__list--price"><span class="price" value="400">400</span>
-                                        <sup>руб.</sup></div>
-                                    <div class="quantity">
-                                        <div class="quantity-controls-min">-</div>
-                                        <input name="quantity" value="1" type="number" readonly="readonly">
-                                        <div class="quantity-controls-max">+</div>
-                                    </div>
-                                </div>
-                                <div class="product__list--button">
-                                    <div class="button product__list--button-by">В корзину</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div>
-            </div>
-        </section>
 
         <section id="" class="home__product">
             <div class="container">
                 <h2 class="section-title">Сеты</h2>
                 <div class="row swiper-container swiper-product">
                     <div class="swiper-wrapper">
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list hit">
                                 <div class="product__list--image">
                                     <img src="assets/img/product1.jpg">
@@ -1012,7 +582,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product2.jpg">
@@ -1033,7 +603,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product3.jpg">
@@ -1054,7 +624,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list veg">
                                 <div class="product__list--image">
                                     <img src="assets/img/product4.jpg">
@@ -1075,7 +645,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list hit">
                                 <div class="product__list--image">
                                     <img src="assets/img/product1.jpg">
@@ -1096,7 +666,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product2.jpg">
@@ -1117,7 +687,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product3.jpg">
@@ -1138,7 +708,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list veg">
                                 <div class="product__list--image">
                                     <img src="assets/img/product4.jpg">
@@ -1159,7 +729,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list hit">
                                 <div class="product__list--image">
                                     <img src="assets/img/product1.jpg">
@@ -1180,7 +750,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product2.jpg">
@@ -1201,7 +771,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product3.jpg">
@@ -1222,7 +792,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list veg">
                                 <div class="product__list--image">
                                     <img src="assets/img/product4.jpg">
@@ -1243,7 +813,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list hit">
                                 <div class="product__list--image">
                                     <img src="assets/img/product1.jpg">
@@ -1264,7 +834,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product2.jpg">
@@ -1285,7 +855,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product3.jpg">
@@ -1306,7 +876,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list veg">
                                 <div class="product__list--image">
                                     <img src="assets/img/product4.jpg">
@@ -1327,7 +897,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list hit">
                                 <div class="product__list--image">
                                     <img src="assets/img/product1.jpg">
@@ -1348,7 +918,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product2.jpg">
@@ -1369,7 +939,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list">
                                 <div class="product__list--image">
                                     <img src="assets/img/product3.jpg">
@@ -1390,7 +960,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                        <div class="swiper-slide product-item">
                             <div class="product__list veg">
                                 <div class="product__list--image">
                                     <img src="assets/img/product4.jpg">
@@ -1418,7 +988,440 @@
                 </div>
             </div>
         </section>
+
         <section id="" class="home__product">
+            <div class="container">
+                <h2 class="section-title">Сеты</h2>
+                <div class="row swiper-container swiper-product">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide product-item">
+                            <div class="product__list hit">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product1.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №10</div>
+                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="2050">2 050</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product2.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №8</div>
+                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="1590">1 590</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product3.jpg">
+                                </div>
+                                <div class="product__list--name">Минисет №5</div>
+                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="510">510</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list veg">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product4.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №6</div>
+                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="400">400</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list hit">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product1.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №10</div>
+                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="2050">2 050</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product2.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №8</div>
+                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="1590">1 590</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product3.jpg">
+                                </div>
+                                <div class="product__list--name">Минисет №5</div>
+                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="510">510</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list veg">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product4.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №6</div>
+                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="400">400</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list hit">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product1.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №10</div>
+                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="2050">2 050</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product2.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №8</div>
+                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="1590">1 590</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product3.jpg">
+                                </div>
+                                <div class="product__list--name">Минисет №5</div>
+                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="510">510</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list veg">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product4.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №6</div>
+                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="400">400</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list hit">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product1.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №10</div>
+                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="2050">2 050</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product2.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №8</div>
+                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="1590">1 590</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product3.jpg">
+                                </div>
+                                <div class="product__list--name">Минисет №5</div>
+                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="510">510</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list veg">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product4.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №6</div>
+                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="400">400</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list hit">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product1.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №10</div>
+                                <div class="product__list--info">72 шт. | 1560 г. | 1700 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="2050">2 050</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product2.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №8</div>
+                                <div class="product__list--info">24 шт. | 960 г. | 800 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="1590">1 590</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product3.jpg">
+                                </div>
+                                <div class="product__list--name">Минисет №5</div>
+                                <div class="product__list--info">14 шт. | 450 г. | 400 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="510">510</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide product-item">
+                            <div class="product__list veg">
+                                <div class="product__list--image">
+                                    <img src="assets/img/product4.jpg">
+                                </div>
+                                <div class="product__list--name">Сет №6</div>
+                                <div class="product__list--info">16 шт. | 460 г. | 490 Kkal</div>
+                                <div class="product__list--info-price">
+                                    <div class="product__list--price"><span class="price" value="400">400</span>
+                                        <sup>руб.</sup></div>
+                                    <div class="quantity">
+                                        <div class="quantity-controls-min">-</div>
+                                        <input name="quantity" value="1" type="number" readonly="readonly">
+                                        <div class="quantity-controls-max">+</div>
+                                    </div>
+                                </div>
+                                <div class="product__list--button">
+                                    <div class="button product__list--button-by">В корзину</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+        <section id="product-tabs" class="home__product">
             <div class="container">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
@@ -1434,7 +1437,7 @@
                     <div class="tab-pane fade show active" id="new" role="tabpanel" aria-labelledby="home-tab">
                         <div class="row swiper-container swiper-product">
                             <div class="swiper-wrapper">
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list hit">
                                         <div class="product__list--image">
                                             <img src="assets/img/product1.jpg">
@@ -1455,7 +1458,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product2.jpg">
@@ -1476,7 +1479,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product3.jpg">
@@ -1497,7 +1500,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list veg">
                                         <div class="product__list--image">
                                             <img src="assets/img/product4.jpg">
@@ -1518,7 +1521,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list hit">
                                         <div class="product__list--image">
                                             <img src="assets/img/product1.jpg">
@@ -1539,7 +1542,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product2.jpg">
@@ -1560,7 +1563,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product3.jpg">
@@ -1581,7 +1584,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list veg">
                                         <div class="product__list--image">
                                             <img src="assets/img/product4.jpg">
@@ -1602,7 +1605,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list hit">
                                         <div class="product__list--image">
                                             <img src="assets/img/product1.jpg">
@@ -1623,7 +1626,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product2.jpg">
@@ -1644,7 +1647,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product3.jpg">
@@ -1665,7 +1668,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list veg">
                                         <div class="product__list--image">
                                             <img src="assets/img/product4.jpg">
@@ -1686,7 +1689,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list hit">
                                         <div class="product__list--image">
                                             <img src="assets/img/product1.jpg">
@@ -1707,7 +1710,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product2.jpg">
@@ -1728,7 +1731,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product3.jpg">
@@ -1749,7 +1752,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list veg">
                                         <div class="product__list--image">
                                             <img src="assets/img/product4.jpg">
@@ -1770,7 +1773,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list hit">
                                         <div class="product__list--image">
                                             <img src="assets/img/product1.jpg">
@@ -1791,7 +1794,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product2.jpg">
@@ -1812,7 +1815,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product3.jpg">
@@ -1833,7 +1836,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list veg">
                                         <div class="product__list--image">
                                             <img src="assets/img/product4.jpg">
@@ -1863,7 +1866,7 @@
                     <div class="tab-pane fade" id="actii" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="row swiper-container swiper-product">
                             <div class="swiper-wrapper">
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list hit">
                                         <div class="product__list--image">
                                             <img src="assets/img/product1.jpg">
@@ -1884,7 +1887,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product2.jpg">
@@ -1905,7 +1908,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product3.jpg">
@@ -1926,7 +1929,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list veg">
                                         <div class="product__list--image">
                                             <img src="assets/img/product4.jpg">
@@ -1947,7 +1950,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list hit">
                                         <div class="product__list--image">
                                             <img src="assets/img/product1.jpg">
@@ -1968,7 +1971,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product2.jpg">
@@ -1989,7 +1992,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product3.jpg">
@@ -2010,7 +2013,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list veg">
                                         <div class="product__list--image">
                                             <img src="assets/img/product4.jpg">
@@ -2031,7 +2034,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list hit">
                                         <div class="product__list--image">
                                             <img src="assets/img/product1.jpg">
@@ -2052,7 +2055,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product2.jpg">
@@ -2073,7 +2076,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product3.jpg">
@@ -2094,7 +2097,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list veg">
                                         <div class="product__list--image">
                                             <img src="assets/img/product4.jpg">
@@ -2115,7 +2118,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list hit">
                                         <div class="product__list--image">
                                             <img src="assets/img/product1.jpg">
@@ -2136,7 +2139,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product2.jpg">
@@ -2157,7 +2160,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product3.jpg">
@@ -2178,7 +2181,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list veg">
                                         <div class="product__list--image">
                                             <img src="assets/img/product4.jpg">
@@ -2199,7 +2202,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list hit">
                                         <div class="product__list--image">
                                             <img src="assets/img/product1.jpg">
@@ -2220,7 +2223,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product2.jpg">
@@ -2241,7 +2244,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list">
                                         <div class="product__list--image">
                                             <img src="assets/img/product3.jpg">
@@ -2262,7 +2265,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-sm-4 col-md-4 col-lg-3 swiper-slide">
+                                <div class="swiper-slide product-item">
                                     <div class="product__list veg">
                                         <div class="product__list--image">
                                             <img src="assets/img/product4.jpg">
@@ -2290,7 +2293,7 @@
                         </div>
                     </div>
                 </div>
-                </div>
+            </div>
         </section>
 
 
@@ -2299,31 +2302,33 @@
                 <h2 class="section-title">О компании</h2>
                 <div class="row about__info">
                     <div class="col-md-6 col-lg-7 col-xl-9 about__info--text">
-                        <p class="about__info--text-bold">Заказ и доставка роллов, пиццы и WOK(Вок) в городе Курск</p>
-                        <p>Суши МИЮШИ открылись в октябре 2012г. и уже завоевали успех у тех, кто ценит японскую кухню и
-                            качественное приготовление блюд.</p>
-                        <p>С 2013 года мы осуществляем не только доставку на дом, теперь для вас открыт наш уютный
-                            небольшой зал. Придя сюда, вы сможете плотно пообедать, насладиться прекрасными напитками,
-                            посидеть с друзьями или обзавестись новыми знакомствами.</p>
-                        <p>Открывая зал, Мы преследовали цель предоставить своим посетителям максимум удобства и
-                            комфорта, поэтому, придя сюда в первый раз, вы почувствуете себя как рыба в воде, окунувшись
-                            в домашнюю и теплую обстановку!</p>
-                        <p>Особое внимание мы уделяем организации доставки суши и других блюд, которая осуществляется
-                            только по г. Курске. Четкая и слаженная работа курьеров позволяет максимально сократить
-                            время от приготовления блюда до его попадания на стол заказчику. Как правило, оно составляет
-                            от 20 до 60 минут в зависимости от местонахождения клиента. Операторы службы доставки всегда
-                            осведомлены обо всех изменениях времени доставки и предупреждают клиентов заранее, а при
-                            возможных серьезных задержках в связи с дорожной ситуацией предложат Вам альтернативу. Мы
-                            беремся только за ту работу, которую можем выполнить в срок.</p>
-                        <p>В меню суши МИЮШИ представлено все многообразие японской кухни. Классические суши, и роллы
-                            приготовлены в соответствии с традиционными рецептами. Для любителей нежных и тающих во рту
-                            блюд предлагаются роллы с мясом краба, а также для больших любителей копченого угря
-                            потрясающий ролл Дракон. Для желающих пробовать что-то новое и необычное – острые ГУНКАНЫ и
-                            новинка нашего меню - ИНАРИ, широкий выбор горячих роллов. Большим компаниям будет удобно
-                            заказать суши и роллы, объединенные в сеты, включающие сразу несколько видов каждого из этих
-                            блюд. Кроме того, меню суши МИЮШИ не ограничено только японской кухней, здесь всегда можно
-                            заказать горячие и холодные блюда ЛАПША или РИС WOK с различными мясными и рыбными
-                            наполнителями, салаты, горячие закуски и различные напитки.</p>
+                        <div class="show-text">
+                            <p class="about__info--text-bold">Заказ и доставка роллов, пиццы и WOK(Вок) в городе Курск</p>
+                            <p>Суши МИЮШИ открылись в октябре 2012г. и уже завоевали успех у тех, кто ценит японскую кухню и
+                                качественное приготовление блюд.</p>
+                            <p>С 2013 года мы осуществляем не только доставку на дом, теперь для вас открыт наш уютный
+                                небольшой зал. Придя сюда, вы сможете плотно пообедать, насладиться прекрасными напитками,
+                                посидеть с друзьями или обзавестись новыми знакомствами.</p>
+                            <p>Открывая зал, Мы преследовали цель предоставить своим посетителям максимум удобства и
+                                комфорта, поэтому, придя сюда в первый раз, вы почувствуете себя как рыба в воде, окунувшись
+                                в домашнюю и теплую обстановку!</p>
+                            <p>Особое внимание мы уделяем организации доставки суши и других блюд, которая осуществляется
+                                только по г. Курске. Четкая и слаженная работа курьеров позволяет максимально сократить
+                                время от приготовления блюда до его попадания на стол заказчику. Как правило, оно составляет
+                                от 20 до 60 минут в зависимости от местонахождения клиента. Операторы службы доставки всегда
+                                осведомлены обо всех изменениях времени доставки и предупреждают клиентов заранее, а при
+                                возможных серьезных задержках в связи с дорожной ситуацией предложат Вам альтернативу. Мы
+                                беремся только за ту работу, которую можем выполнить в срок.</p>
+                            <p>В меню суши МИЮШИ представлено все многообразие японской кухни. Классические суши, и роллы
+                                приготовлены в соответствии с традиционными рецептами. Для любителей нежных и тающих во рту
+                                блюд предлагаются роллы с мясом краба, а также для больших любителей копченого угря
+                                потрясающий ролл Дракон. Для желающих пробовать что-то новое и необычное – острые ГУНКАНЫ и
+                                новинка нашего меню - ИНАРИ, широкий выбор горячих роллов. Большим компаниям будет удобно
+                                заказать суши и роллы, объединенные в сеты, включающие сразу несколько видов каждого из этих
+                                блюд. Кроме того, меню суши МИЮШИ не ограничено только японской кухней, здесь всегда можно
+                                заказать горячие и холодные блюда ЛАПША или РИС WOK с различными мясными и рыбными
+                                наполнителями, салаты, горячие закуски и различные напитки.</p>
+                        </div>
                     </div>
                     <div class="col-md-6 col-lg-5 col-xl-3 about__info--image">
                         <img src="assets/img/product-about.jpg">
@@ -2336,7 +2341,7 @@
         <div class="container">
             <div class="row footer__top">
                 <div class="footer__item">
-                    <p class="footer__item--title footer__item--title--mobile">Меню</p>
+                    <p class="footer__item--title footer-title footer__item--title--mobile">Меню</p>
                     <ul class="footer__item--menu">
                         <li class="footer__item--menu-item"><a href="javascript:void(0)"
                                 class="footer__item--title">Суши</a></li>
@@ -2360,8 +2365,8 @@
                 </div>
 
                 <div class="footer__item">
-                    <p class="footer__item--title">Сеты</p>
-                    <div class="footer__item--column">
+                    <p class="footer__item--title footer-title">Сеты</p>
+                   
                         <ul class="footer__item--menu">
                             <li class="footer__item--menu-item"><a class="footer__item--refer"
                                     href="javascript:void(0)">До 500 руб.</a></li>
@@ -2373,11 +2378,7 @@
                                     href="javascript:void(0)">До 2000 руб.(большая компания)</a></li>
                             <li class="footer__item--menu-item"><a class="footer__item--refer"
                                     href="javascript:void(0)">от 2000 руб.(очень большая компания)</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="footer__item">
-                    <ul class="footer__item--menu">
+                       
                         <li class="footer__item--menu-item"><a class="footer__item--refer" href="javascript:void(0)">С
                                 угрем</a></li>
                         <li class="footer__item--menu-item"><a class="footer__item--refer"
@@ -2390,7 +2391,7 @@
                 </div>
 
                 <div class="footer__item">
-                    <p class="footer__item--title">Роллы</p>
+                    <p class="footer__item--title footer-title">Роллы</p>
                     <ul class="footer__item--menu">
                         <li class="footer__item--menu-item"><a class="footer__item--refer"
                                 href="javascript:void(0)">Традиционные/Классические</a></li>
@@ -2406,7 +2407,7 @@
                 </div>
 
                 <div class="footer__item">
-                    <p class="footer__item--title">Вок</p>
+                    <p class="footer__item--title footer-title">Вок</p>
                     <ul class="footer__item--menu">
                         <li class="footer__item--menu-item"><a class="footer__item--refer"
                                 href="javascript:void(0)">Яичная</a></li>
@@ -2422,10 +2423,7 @@
                 </div>
 
                 <div class="footer__item">
-                    <p class="footer__item--title">Пицца
-                        
-<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-down" class="svg-inline--fa fa-chevron-down fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg>
-                    </p>
+                    <p class="footer__item--title footer-title">Пицца</p>
                     <ul class="footer__item--menu">
                         <li class="footer__item--menu-item"><a class="footer__item--refer"
                                 href="javascript:void(0)">Мясная</a></li>
@@ -2439,12 +2437,13 @@
                 </div>
             </div>
             <div class="row footer__bottom">
-                <p class="col-3 col-xl-2 footer__item footer__item--copyright">Миюши ©
+                <p class="col-sm-3 col-xl-2 footer__item footer__item--copyright">Миюши ©
                     <script> var d = new Date(); var curr_year = d.getFullYear(); document.write(curr_year); </script>
                 </p>
-                <p class="col-7 col-xl-8 footer__item"><a class="footer__item--bottom-refer" href="">Соглашение на обработку
+                <p class="col-sm-7 col-xl-8 footer__item"><a class="footer__item--bottom-refer" href="">Соглашение на
+                        обработку
                         персональных данных</a></p>
-                <div class="col-2 col-xl-1 footer__item">
+                <div class="col-sm-2 col-xl-1 footer__item">
                     <ul class="social-icon footer__item--social">
                         <li class="social-icon__item">
                             <a href="javascript:void(0)" class="social-icon__item--refer"><i
